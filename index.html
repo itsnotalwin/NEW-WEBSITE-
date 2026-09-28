@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shutterhaus Visuals | Photography in Johannesburg</title>
+<meta name="description" content="Shutterhaus Visuals is a Johannesburg photography studio offering portrait, event and commercial photography across Gauteng and South Africa.">
+<link rel="canonical" href="https://www.yourdomain.co.za/">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Social sharing: replace the URL and image (1200x630 recommended) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shutterhaus Visuals">
+<meta property="og:title" content="Shutterhaus Visuals | Photography in Johannesburg">
+<meta property="og:description" content="Portrait, event and commercial photography from a Johannesburg studio.">
+<meta property="og:url" content="https://www.yourdomain.co.za/">
+<meta property="og:image" content="https://www.yourdomain.co.za/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23222'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='20' text-anchor='middle' fill='%23fff'%3ES%3C/text%3E%3C/svg%3E">
+
+<!-- Structured data for search engines: update the details -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Photographer",
+  "name": "Shutterhaus Visuals",
+  "url": "https://www.yourdomain.co.za/",
+  "image": "https://www.yourdomain.co.za/images/og-cover.jpg",
+  "email": "you@example.com",
+  "telephone": "+27000000000",
+  "foundingDate": "2019",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kempton Park",
+    "addressRegion": "Gauteng",
+    "addressCountry": "ZA"
+  },
+  "areaServed": "South Africa",
+  "sameAs": ["https://instagram.com/yourhandle", "https://facebook.com/yourpage"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+  body {
+    background: #fff;
+    color: #222;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+  :focus-visible { outline: 2px solid #222; outline-offset: 3px; }
+
+  .skip {
+    position: absolute; left: -9999px; top: 8px;
+    background: #222; color: #fff; padding: 8px 14px; z-index: 100;
+    font-size: 14px; text-decoration: none;
+  }
+  .skip:focus { left: 8px; }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: #fff;
+    display: flex; align-items: center;
+    padding: 18px 28px 20px;
+    gap: 70px;
+  }
+  .logo {
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    font-weight: 700; text-transform: uppercase;
+    line-height: .88; letter-spacing: .5px;
+    color: #333; text-decoration: none; font-size: 40px;
+  }
+  .logo span { display: block; }
+  .logo .small { font-size: 22px; }
+  nav { display: flex; gap: 28px; flex: 1; }
+  nav a, .social a { color: #666; text-decoration: none; font-size: 15px; }
+  nav a:hover, .social a:hover { color: #111; }
+  .social { display: flex; gap: 24px; }
+  .social a { font-size: 14px; }
+
+  /* ---------- Gallery ---------- */
+  .gallery { column-count: 3; column-gap: 34px; padding: 10px 15px 60px; }
+  .gallery figure { break-inside: avoid; margin-bottom: 34px; cursor: zoom-in; }
+  .gallery img { display: block; width: 100%; height: auto; filter: grayscale(1); }
+  .ph { background: #333; width: 100%; }
+  .ph.tall { aspect-ratio: 2/3; }
+  .ph.wide { aspect-ratio: 3/2; background: #bbb; }
+  .ph.sq   { aspect-ratio: 1/1; background: #111; }
+
+  /* ---------- Sections ---------- */
+  section.page {
+    max-width: 1100px; margin: 0 auto;
+    padding: 70px 28px;
+    border-top: 1px solid #e6e6e6;
+  }
+  h1 {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap;
+  }
+  h2 {
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1px; font-size: 30px;
+    color: #333; margin-bottom: 30px; line-height: 1;
+  }
+  p { color: #555; font-size: 15px; margin-bottom: 1em; }
+
+  .about { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
+  .about .ph, .about img { aspect-ratio: 4/5; width: 100%; object-fit: cover; }
+
+  .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; }
+  .services h3 { font-weight: 400; font-size: 15px; color: #222; letter-spacing: .5px; margin-bottom: 8px; }
+  .services h3::after { content: ""; display: block; width: 28px; height: 1px; background: #222; margin-top: 10px; }
+
+  .steps { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; counter-reset: s; }
+  .steps li { counter-increment: s; font-size: 15px; color: #555; }
+  .steps li::before {
+    content: "0" counter(s); display: block;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 700;
+    font-size: 22px; color: #767676; margin-bottom: 6px;
+  }
+  .steps strong { font-weight: 400; color: #222; display: block; }
+
+  /* ---------- Contact ---------- */
+  .contact { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; }
+  form { display: grid; gap: 16px; }
+  label { font-size: 13px; color: #666; display: block; margin-bottom: 2px; }
+  input, select, textarea {
+    width: 100%; font: inherit; font-size: 16px; color: #222;
+    padding: 10px 0; border: 0; border-bottom: 1px solid #767676;
+    background: transparent; border-radius: 0;
+  }
+  input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: none; border-bottom: 2px solid #111;
+  }
+  textarea { resize: vertical; min-height: 110px; }
+  .hp { position: absolute; left: -9999px; }
+  button.send {
+    justify-self: start; font: inherit; font-size: 14px;
+    letter-spacing: 1px; text-transform: lowercase;
+    background: #222; color: #fff; border: 0;
+    padding: 12px 34px; cursor: pointer;
+  }
+  button.send:hover { background: #000; }
+  button.send[disabled] { opacity: .5; cursor: default; }
+  #status { font-size: 14px; color: #333; min-height: 1.5em; }
+  .contact a { color: #222; }
+
+  footer { text-align: center; padding: 30px; font-size: 13px; color: #6b6b6b; border-top: 1px solid #e6e6e6; }
+
+  /* ---------- Lightbox ---------- */
+  #lb {
+    position: fixed; inset: 0; background: rgba(255,255,255,.97);
+    display: none; align-items: center; justify-content: center;
+    z-index: 50; padding: 60px 70px;
+  }
+  #lb.open { display: flex; }
+  #lb .stage { max-width: 100%; max-height: 100%; display: flex; }
+  #lb img { max-width: 100%; max-height: calc(100vh - 120px); filter: grayscale(1); }
+  #lb .ph { width: min(70vw, 60vh); }
+  #lb button {
+    position: absolute; background: none; border: 0; cursor: pointer;
+    font-size: 34px; line-height: 1; color: #333; padding: 12px;
+  }
+  #lb .close { top: 14px; right: 18px; }
+  #lb .prev { left: 10px; top: 50%; transform: translateY(-50%); }
+  #lb .next { right: 10px; top: 50%; transform: translateY(-50%); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px) {
+    html { scroll-padding-top: 20px; }
+    header { flex-wrap: wrap; gap: 14px 30px; position: static; }
+    .gallery { column-count: 2; column-gap: 20px; }
+    .gallery figure { margin-bottom: 20px; }
+    .about, .contact { grid-template-columns: 1fr; gap: 30px; }
+    .services { grid-template-columns: 1fr; gap: 30px; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    #lb { padding: 60px 16px; }
+  }
+  @media (max-width: 560px) {
+    .gallery { column-count: 1; }
+    .steps { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+  @media print {
+    header, #lb, form { display: none; }
+  }
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#photo">Skip to content</a>
+
+<header>
+  <a class="logo" href="#top" aria-label="Shutterhaus Visuals, home"><span>Shutterhaus</span><span class="small">Visuals</span></a>
+  <nav aria-label="Main">
+    <a href="#photo">photo</a>
+    <a href="#about">about</a>
+    <a href="#services">services</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <div class="social">
+    <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">instagram</a>
+    <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">facebook</a>
+  </div>
+</header>
+
+<main>
+  <h1>Shutterhaus Visuals: photography in Johannesburg</h1>
+
+  <!-- ============ PHOTO ============ -->
+  <!--
+    Replace each .ph div with an image, e.g.:
+    <img src="images/photo-01.jpg" width="1600" height="2400" loading="lazy" decoding="async" alt="Describe the photo in a short sentence">
+    Always set width/height to the real pixel size (prevents layout shift) and write a real alt text.
+    Export web images at roughly 1600px on the long edge, JPEG quality ~80.
+  -->
+  <div id="photo" class="gallery" role="list" aria-label="Photo gallery">
+    <figure role="listitem" tabindex="0" aria-label="Open image 1"><div class="ph tall"></div></figure>
+    <figure role="listitem" tabindex="0" aria-label="Open image 2"><div class="ph wide"></div></figure>
+    <figure role="listitem" tabindex="0" aria-label="Open image 3"><div class="ph tall"></div></figure>
+    <figure role="listitem" tabindex="0" aria-label="Open image 4"><div class="ph sq"></div></figure>
+    <figure role="listitem" tabindex="0" aria-label="Open image 5"><div class="ph wide"></div></figure>
+    <figure role="listitem" tabindex="0" aria-label="Open image 6"><div class="ph tall"></div></figure>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="page">
+    <div class="about">
+      <div class="ph"></div> <!-- replace with your portrait <img> -->
+      <div>
+        <h2>About</h2>
+        <p>Shutterhaus Visuals is a Johannesburg-based photography studio, founded in 2019 and run by Alwin.</p>
+        <p>Write two or three short paragraphs here: how you started, what you look for in a frame, and what it is like to work with you. Keep it personal and plain-spoken.</p>
+        <p>Based in Kempton Park, available across Gauteng and for travel throughout South Africa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="page">
+    <h2>Services</h2>
+    <div class="services">
+      <div>
+        <h3>Portraits</h3>
+        <p>Studio and on-location sessions for individuals, couples and families. Replace with your own description.</p>
+      </div>
+      <div>
+        <h3>Events</h3>
+        <p>Coverage for weddings, functions and corporate events. Replace with your own description.</p>
+      </div>
+      <div>
+        <h3>Commercial</h3>
+        <p>Product, brand and editorial photography for businesses. Replace with your own description.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="page" aria-labelledby="how">
+    <h2 id="how">How it works</h2>
+    <ol class="steps">
+      <li><strong>Enquire</strong>Tell me about your shoot, date and location.</li>
+      <li><strong>Plan</strong>We agree on the look, timing and deliverables.</li>
+      <li><strong>Shoot</strong>Relaxed direction, and unhurried time behind the lens.</li>
+      <li><strong>Deliver</strong>A curated, edited gallery delivered online.</li>
+    </ol>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="page">
+    <div class="contact">
+      <div>
+        <h2>Contact</h2>
+        <p>For bookings and enquiries, send a message and I will get back to you within a couple of days.</p>
+        <p>
+          <a href="mailto:you@example.com">you@example.com</a><br>
+          <a href="tel:+27000000000">+27 00 000 0000</a><br>
+          Johannesburg, South Africa
+        </p>
+        <p style="font-size:13px">Your details are used only to reply to your enquiry (POPIA).</p>
+      </div>
+
+      <!--
+        Create a free form at formspree.io (or similar) and paste your endpoint below.
+        Works without JavaScript too; with JavaScript it submits in place.
+      -->
+      <form id="enquiry" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div>
+          <label for="type">Type of shoot</label>
+          <select id="type" name="type">
+            <option>Portrait</option>
+            <option>Event</option>
+            <option>Commercial</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div><label for="msg">Message</label><textarea id="msg" name="message" required></textarea></div>
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="send" type="submit">send</button>
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; <span id="yr">2026</span> Shutterhaus Visuals. All rights reserved.</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="close" aria-label="Close">&times;</button>
+  <button class="prev" aria-label="Previous image">&#8249;</button>
+  <div class="stage"></div>
+  <button class="next" aria-label="Next image">&#8250;</button>
+</div>
+
+<script>
+(function () {
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  /* ---------- Lightbox ---------- */
+  var items = Array.prototype.slice.call(document.querySelectorAll(".gallery figure"));
+  var lb = document.getElementById("lb");
+  var stage = lb.querySelector(".stage");
+  var current = 0, opener = null;
+
+  function show(i) {
+    current = (i + items.length) % items.length;
+    stage.innerHTML = "";
+    stage.appendChild(items[current].firstElementChild.cloneNode(true));
+  }
+  function open(i) {
+    opener = document.activeElement;
+    show(i);
+    lb.hidden = false;
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+    lb.querySelector(".close").focus();
+  }
+  function close() {
+    lb.classList.remove("open");
+    lb.hidden = true;
+    document.body.style.overflow = "";
+    if (opener) opener.focus();
+  }
+
+  items.forEach(function (f, i) {
+    f.addEventListener("click", function () { open(i); });
+    f.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(i); }
+    });
+  });
+  lb.querySelector(".close").addEventListener("click", close);
+  lb.querySelector(".prev").addEventListener("click", function () { show(current - 1); });
+  lb.querySelector(".next").addEventListener("click", function () { show(current + 1); });
+  lb.addEventListener("click", function (e) { if (e.target === lb || e.target === stage) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowLeft") show(current - 1);
+    if (e.key === "ArrowRight") show(current + 1);
+    if (e.key === "Tab") { // keep focus inside the dialog
+      var f = lb.querySelectorAll("button");
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  /* ---------- Enquiry form ---------- */
+  var form = document.getElementById("enquiry");
+  var status = document.getElementById("status");
+  var btn = form.querySelector("button");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    status.textContent = "";
+    if (!form.checkValidity()) {
+      status.textContent = "Please fill in your name, a valid email and a message.";
+      return;
+    }
+    if (form.action.indexOf("YOUR_FORM_ID") !== -1) {
+      status.textContent = "The form is not connected yet. Please email directly.";
+      return;
+    }
+    btn.disabled = true;
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    }).then(function (r) {
+      if (r.ok) { form.reset(); status.textContent = "Thank you. Your message has been sent."; }
+      else { status.textContent = "Something went wrong. Please email directly."; }
+    }).catch(function () {
+      status.textContent = "Could not send. Please check your connection or email directly.";
+    }).then(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
