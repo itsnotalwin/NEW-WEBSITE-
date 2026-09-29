@@ -1,0 +1,15 @@
+{
+  "name": "Shutterhaus Visuals",
+  "short_name": "Shutterhaus",
+  "description": "Portrait photography in Kempton Park, Johannesburg. Portraits, couples, families, events and commercial work across Gauteng and South Africa.",
+  "start_url": "/NEW-WEBSITE-/",
+  "scope": "/NEW-WEBSITE-/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "en-ZA",
+  "icons": [
+    { "src": "/NEW-WEBSITE-/images/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/NEW-WEBSITE-/images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
